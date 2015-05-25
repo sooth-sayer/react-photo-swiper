@@ -1,0 +1,49 @@
+{
+  "name": "react-photo-swiper",
+  "version": "0.0.1",
+  "description": "Photo Swiper, as a React component",
+  "homepage": "https://github.com/sooth-sayer/react-photo-swiper",
+  "style": "react-photo-swiper.css",
+  "keywords": [
+    "react",
+    "component",
+    "carousel",
+    "swiper",
+    "react-component"
+  ],
+  "author": {
+    "name": "Dm. Che",
+    "email": "d.chernyatiev@gmail.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/sooth-sayer/react-photo-swiper.git"
+  },
+  "main": "react-photo-swiper.js",
+  "license": "MIT",
+  "devDependencies": {
+    "browserify": "^5.9.1",
+    "uglify-js": "^2.4.19"
+  },
+  "scripts": {
+    "build": "uglifyjs react-photo-swiper.js -cm -o react-photo-swiper.min.js",
+    "postinstall": "rework-npm swiper.css -o react-photo-swiper.css",
+    "prepublish": "npm run build"
+  },
+  "dependencies": {
+    "swiper": "3.0.x",
+    "rework-npm-cli": "*"
+  },
+  "peerDependencies": {
+    "react": "0.12.x"
+  },
+  "bugs": {
+    "url": "https://github.com/sooth-sayer/react-photo-swiper/issues"
+  },
+  "maintainers": [
+    {
+      "name": "Dm. Che",
+      "email": "d.chernyatiev@gmail.com"
+    }
+  ]
+}

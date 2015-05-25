@@ -1,0 +1,7 @@
+{
+  "rules": {
+    "no-unused-vars": false,
+    "new-cap": false,
+    "no-underscore-dangle": false
+  }
+}
