@@ -133,13 +133,13 @@
     },
 
     detectCloseGesture: function(startPoint, endPoint, startTime, endTime) {
-      var threshold = screen ? screen.height / 2 : 300;
+      var threshold = screen ? screen.height / 2 : defaults.threshold;
       var dx = endPoint.x - startPoint.x;
       var dy = endPoint.y - startPoint.y;
       var dt = endTime - startTime;
       var speed = Math.abs(dy) / dt;
 
-      return Math.abs(dy) > Math.abs(dx) && (Math.abs(dy) > defaults.threshold || speed > defaults.minSpeed);
+      return Math.abs(dy) > Math.abs(dx) && (Math.abs(dy) > threshold || speed > defaults.minSpeed);
     },
 
     detectCloseMove: function(startPoint, movePoint) {
