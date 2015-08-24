@@ -48,14 +48,6 @@
       if (this.isMounted()) {
         var verticalSwiper = Swiper(this.getDOMNode(), { direction: "vertical" });
         this.swiper = Swiper(".swiper-container-h", this.props);
-        // NOTE: Does not seem that initialSlide works with images
-        // NOTE: Lazy loading is also not helped
-        var initialSlide = this.props.initialSlide;
-        if (initialSlide) {
-          this.swiper.on("imagesReady", function() {
-            this.swiper.slideTo(initialSlide, 0);
-          }.bind(this));
-        }
 
         this.bindSwiperEvents(verticalSwiper);
       }

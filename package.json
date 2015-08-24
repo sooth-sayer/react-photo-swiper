@@ -1,6 +1,6 @@
 {
   "name": "react-photo-swiper",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Photo Swiper, as a React component",
   "homepage": "https://github.com/sooth-sayer/react-photo-swiper",
   "style": "react-photo-swiper.css",
